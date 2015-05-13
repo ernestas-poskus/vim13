@@ -1,2 +1,3 @@
 # vim13
-Vim setup files
+
+![Vim + Tmux setup](/doc/looks.png)
