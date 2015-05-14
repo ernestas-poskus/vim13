@@ -12,4 +12,3 @@ autocmd User fugitive
 " fugitive buffers. This prevents this from becomming an issue:
 
 autocmd BufReadPost fugitive://* set bufhidden=delete
-
