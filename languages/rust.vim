@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.rs set filetype=rust
+autocmd FileType rust setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2

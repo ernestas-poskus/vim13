@@ -3,8 +3,8 @@ autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType go set nolist
 
 function! s:GoVet()
-	cexpr system("go vet " . shellescape(expand('%')))
-	copen
+  cexpr system("go vet " . shellescape(expand('%')))
+  copen
 endfunction
 command! GoVet :call s:GoVet()
 
@@ -14,19 +14,19 @@ autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after 
 autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
 
 " Keyconfig
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap gd <Plug>(go-def)
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-au FileType go inoremap ' "
-au FileType go inoremap " '
+ nmap <Leader>i <Plug>(go-info)
+ nmap <Leader>gd <Plug>(go-doc)
+ nmap <Leader>gv <Plug>(go-doc-vertical)
+ nmap <Leader>gb <Plug>(go-doc-browser)
+ nmap <leader>r <Plug>(go-run)
+ nmap <leader>b <Plug>(go-build)
+ nmap <leader>t <Plug>(go-test)
+ nmap gd <Plug>(go-def)
+ nmap <Leader>ds <Plug>(go-def-split)
+ nmap <Leader>dv <Plug>(go-def-vertical)
+ nmap <Leader>dt <Plug>(go-def-tab)
+ inoremap ' "
+ inoremap " '
 
 " vim-go settings
 
