@@ -21,3 +21,4 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Go to last edit location with ,.
 nnoremap <leader>. '.
 
+nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
