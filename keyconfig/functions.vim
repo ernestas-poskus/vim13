@@ -51,3 +51,7 @@ function! SetCursorPosition()
         endif
     end
 endfunction
+
+function! YRRunAfterMaps()
+  nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
+endfunction
