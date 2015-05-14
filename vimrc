@@ -129,11 +129,6 @@ for fpath in split(globpath('~/vim13/settings/', '*.vim'), '\n')
   exe 'source' fpath
 endfor
 
-" Language Settings
-for fpath in split(globpath('~/vim13/languages/', '*.vim'), '\n')
-  exe 'source' fpath
-endfor
-
 " source ~/.vimrc.after if it exists.
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
