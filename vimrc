@@ -53,9 +53,6 @@ set noswapfile
 set nobackup
 set nowb
 
-" ================ Vim Folder =======================
-silent !mkdir -p ~/.vim > /dev/null 2>&1
-
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
