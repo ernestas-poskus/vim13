@@ -70,6 +70,7 @@ set smarttab
 
 filetype plugin on
 filetype indent on
+autocmd BufNewFile,BufRead *.cql set filetype=cql
 
 " Display tabs and trailing spaces visually
 set list
