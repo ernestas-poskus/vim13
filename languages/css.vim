@@ -1,1 +1,1 @@
-autocmd FileType css setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2

@@ -1,4 +1,4 @@
-autocmd FileType ruby,eruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Rails
 nnoremap ,vv :Rview<cr>

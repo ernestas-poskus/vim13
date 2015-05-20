@@ -1,6 +1,4 @@
-" FileType
-autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4
-autocmd FileType go set nolist
+setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 
 function! s:GoVet()
   cexpr system("go vet " . shellescape(expand('%')))

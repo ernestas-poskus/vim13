@@ -67,8 +67,7 @@ set autoindent
 set smartindent
 set smarttab
 
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 autocmd BufNewFile,BufRead *.cql set filetype=cql
 
 " Display tabs and trailing spaces visually
