@@ -69,6 +69,7 @@ set smarttab
 
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.cql set filetype=cql
+autocmd BufNewFile,BufRead *.tpl set filetype=html
 autocmd BufNewFile,BufRead *.md  set filetype=md
 
 " Display tabs and trailing spaces visually
