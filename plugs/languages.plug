@@ -32,3 +32,6 @@ Plug 'phildawes/racer', { 'for': 'rust' }
 
 " TOML
 Plug 'cespare/vim-toml', { 'for': 'toml' }
+
+" JSX
+Plug 'mxw/vim-jsx', { 'for': 'jsx' }
