@@ -35,3 +35,6 @@ Plug 'cespare/vim-toml', { 'for': 'toml' }
 
 " JSX
 Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+
+" Dockerfile
+Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
