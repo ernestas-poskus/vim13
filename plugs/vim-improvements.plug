@@ -1,5 +1,4 @@
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/neocomplete'
 Plug 'briandoll/change-inside-surroundings.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/camelcasemotion'

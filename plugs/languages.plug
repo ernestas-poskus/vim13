@@ -16,7 +16,7 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'golang/lint', { 'for': 'go' }
-Plug 'nsf/gocode', { 'for': 'go' }
+Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
 " Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
