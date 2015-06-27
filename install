@@ -1,5 +1,5 @@
 #!/bin/sh
-mkdir -p ~/.vim > /dev/null 2>&1
-mkdir -p ~/.vim/backups > /dev/null 2>&1
-ln -sf "$HOME/vim13/languages/" "$HOME/.vim/indent"
-ln -sf "$HOME/vim13/vimrc" "$HOME/.vimrc"
+mkdir -p ~/.nvim > /dev/null 2>&1
+mkdir -p ~/.nvim/backups > /dev/null 2>&1
+ln -sf ~/vim13/languages/ ~/.nvim/indent
+ln -sf ~/vim13/vimrc ~/.nvimrc
