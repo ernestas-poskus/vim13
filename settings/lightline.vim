@@ -1,101 +1,115 @@
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'readonly', 'filename', 'modified' ], ['ctrlpmark'] ],
-      \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'component': {
-      \   'readonly': '%{&readonly?"⭤":""}',
-      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'MyFugitive',
-      \   'filename': 'MyFilename',
-      \   'fileformat': 'MyFileformat',
-      \   'filetype': 'MyFiletype',
-      \   'fileencoding': 'MyFileencoding',
-      \   'mode': 'MyMode',
-      \   'ctrlpmark': 'CtrlPMark',
-      \ },
-      \ 'component_expand': {
-      \   'syntastic': 'SyntasticStatuslineFlag',
-      \ },
-      \ 'component_type': {
-      \   'syntastic': 'error',
-      \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂' },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
-      \ }
+  \ 'colorscheme': 'wombat',
+  \ 'active': {
+  \     'left': [
+  \         ['mode', 'paste'],
+  \         ['readonly', 'fugitive'],
+  \         ['ctrlpmark', 'bufferline']
+  \     ],
+  \     'right': [
+  \         ['lineinfo'],
+  \         ['percent'],
+  \         ['fileformat', 'fileencoding', 'filetype', 'syntastic']
+  \     ]
+  \ },
+  \ 'component': {
+  \     'paste': '%{&paste?"!":""}'
+  \ },
+  \ 'component_function': {
+  \     'mode'         : 'MyMode',
+  \     'fugitive'     : 'MyFugitive',
+  \     'readonly'     : 'MyReadonly',
+  \     'ctrlpmark'    : 'CtrlPMark',
+  \     'fileformat'   : 'MyFileformat',
+  \     'fileencoding' : 'MyFileencoding',
+  \     'filetype'     : 'MyFiletype'
+  \ },
+  \ 'component_expand': {
+  \     'syntastic': 'SyntasticStatuslineFlag',
+  \ },
+  \ 'component_type': {
+  \     'syntastic': 'middle',
+  \ },
+  \ 'subseparator': {
+  \     'left': '|', 'right': '|'
+  \ }
+  \ }
 
-function! MyModified()
-  return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
-endfunction
+let g:lightline.mode_map = {
+  \ 'n'      : ' N ',
+  \ 'i'      : ' I ',
+  \ 'R'      : ' R ',
+  \ 'v'      : ' V ',
+  \ 'V'      : 'V-L',
+  \ 'c'      : ' C ',
+  \ "\<C-v>" : 'V-B',
+  \ 's'      : ' S ',
+  \ 'S'      : 'S-L',
+  \ "\<C-s>" : 'S-B',
+  \ '?'      : '      ' }
 
-function! MyReadonly()
-  return &ft !~? 'help' && &readonly ? 'RO' : ''
-endfunction
-
-function! MyFilename()
+function! MyMode()
   let fname = expand('%:t')
-  return fname == 'ControlP' ? g:lightline.ctrlp_item :
-        \ fname == '__Tagbar__' ? g:lightline.fname :
-        \ fname =~ '__Gundo\|NERD_tree' ? '' :
-        \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
-        \ &ft == 'unite' ? unite#get_status_string() :
-        \ &ft == 'vimshell' ? vimshell#get_status_string() :
-        \ ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
-        \ ('' != fname ? fname : '[No Name]') .
-        \ ('' != MyModified() ? ' ' . MyModified() : '')
+  return fname == '__Tagbar__' ? 'Tagbar' :
+          \ fname == 'ControlP' ? 'CtrlP' :
+          \ winwidth('.') > 60 ? lightline#mode() : ''
 endfunction
 
 function! MyFugitive()
   try
-    if expand('%:t') !~? 'Tagbar\|Gundo\|NERD' && &ft !~? 'vimfiler' && exists('*fugitive#head')
-      let mark = ''  " edit here for cool mark
-      let _ = fugitive#head()
-      return strlen(_) ? mark._ : ''
+    if expand('%:t') !~? 'Tagbar' && exists('*fugitive#head')
+        let mark = '± '
+        let _ = fugitive#head()
+        return strlen(_) ? mark._ : ''
     endif
   catch
   endtry
   return ''
 endfunction
 
-function! MyFileformat()
-  return winwidth(0) > 70 ? &fileformat : ''
-endfunction
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
-endfunction
-
-function! MyFileencoding()
-  return winwidth(0) > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
-endfunction
-
-function! MyMode()
-  let fname = expand('%:t')
-  return fname == '__Tagbar__' ? 'Tagbar' :
-        \ fname == 'ControlP' ? 'CtrlP' :
-        \ fname == '__Gundo__' ? 'Gundo' :
-        \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
-        \ fname =~ 'NERD_tree' ? 'NERDTree' :
-        \ &ft == 'unite' ? 'Unite' :
-        \ &ft == 'vimfiler' ? 'VimFiler' :
-        \ &ft == 'vimshell' ? 'VimShell' :
-        \ winwidth(0) > 60 ? lightline#mode() : ''
+function! MyReadonly()
+  return &ft !~? 'help' && &readonly ? '≠' : '' " or ⭤
 endfunction
 
 function! CtrlPMark()
   if expand('%:t') =~ 'ControlP'
-    call lightline#link('iR'[g:lightline.ctrlp_regex])
-    return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
+      call lightline#link('iR'[g:lightline.ctrlp_regex])
+      return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
           \ , g:lightline.ctrlp_next], 0)
   else
-    return ''
+      return ''
   endif
+endfunction
+
+function! MyBufferline()
+  call bufferline#refresh_status()
+  let b = g:bufferline_status_info.before
+  let c = g:bufferline_status_info.current
+  let a = g:bufferline_status_info.after
+  let alen = strlen(a)
+  let blen = strlen(b)
+  let clen = strlen(c)
+  let w = winwidth(0) * 4 / 11
+  if w < alen+blen+clen
+    let whalf = (w - strlen(c)) / 2
+    let aa = alen > whalf && blen > whalf ? a[:whalf] : alen + blen < w - clen || alen < whalf ? a : a[:(w - clen - blen)]
+    let bb = alen > whalf && blen > whalf ? b[-(whalf):] : alen + blen < w - clen || blen < whalf ? b : b[-(w - clen - alen):]
+    return (strlen(bb) < strlen(b) ? '...' : '') . bb . c . aa . (strlen(aa) < strlen(a) ? '...' : '')
+  else
+    return b . c . a
+  endif
+endfunction
+
+function! MyFileformat()
+  return winwidth('.') > 90 ? &fileformat : ''
+endfunction
+
+function! MyFileencoding()
+  return winwidth('.') > 80 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! MyFiletype()
+  return winwidth('.') > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
 endfunction
 
 let g:ctrlp_status_func = {
@@ -124,13 +138,9 @@ endfunction
 
 augroup AutoSyntastic
   autocmd!
-  autocmd BufWritePost *.c,*.cpp call s:syntastic()
+  autocmd BufWritePost *.c,*.cpp,*.perl,*py call s:syntastic()
 augroup END
 function! s:syntastic()
   SyntasticCheck
   call lightline#update()
 endfunction
-
-let g:unite_force_overwrite_statusline = 0
-let g:vimfiler_force_overwrite_statusline = 0
-let g:vimshell_force_overwrite_statusline = 0
