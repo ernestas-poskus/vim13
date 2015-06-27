@@ -30,11 +30,10 @@ sudo checkinstall
 make isntall
 ```
 
-##### Macvim + Lua Installation
+##### Neovim + Tmux support Installation
 
 ```
-brew uninstall macvim
-brew remove macvim
-brew cleanup
-brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
+brew tap neovim/neovim
+brew install --HEAD neovim
+brew install reattach-to-user-namespace
 ```
