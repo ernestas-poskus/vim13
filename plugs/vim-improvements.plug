@@ -1,20 +1,43 @@
-Plug 'Raimondi/delimitMate'
-Plug 'briandoll/change-inside-surroundings.vim'
-Plug 'tomtom/tcomment_vim'
-Plug 'vim-scripts/camelcasemotion'
-Plug 'chrisbra/NrrwRgn'
-Plug 'sjl/gundo.vim'
-Plug 'vim-scripts/YankRing.vim'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-abolish'
-Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'vim-scripts/AutoTag'
-Plug 'vim-scripts/lastpos.vim'
-Plug 'vim-scripts/sudo.vim'
-Plug 'goldfeld/ctrlr.vim'
+" Lightweight statusline
+Plug 'itchyny/lightline.vim'
 
-" Gist
-Plug 'mattn/gist-vim'
-Plug 'mattn/webapi-vim'
+" Git integration
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" Nerd Tree plugin
+Plug 'scrooloose/nerdtree'
+
+" CTRLP
+Plug 'kien/ctrlp.vim'
+Plug 'jasoncodes/ctrlp-modified.vim'
+
+" Motion repeat ("5j" (without quotes) and then ";" to repeat "5j")
+Plug 'vim-scripts/repmo.vim'
+
+" Colorscheme
+Plug 'tomasr/molokai'
+
+" Delimiting quotes
+ Plug 'Raimondi/delimitMate'
+
+" Comment toggle
+ Plug 'tomtom/tcomment_vim'
+
+" Improves w b e motion
+ Plug 'vim-scripts/camelcasemotion'
+
+" A Vim plugin for focussing on a selected region
+ Plug 'chrisbra/NrrwRgn'
+
+" Visualize your Vim undo tree
+ Plug 'sjl/gundo.vim'
+
+" Maintains a history of previous yanks, changes and deletes
+ Plug 'vim-scripts/YankRing.vim'
+
+" Easily search for, substitute, and abbreviate multiple variants of a word
+ Plug 'tpope/vim-abolish'
+
+" Last position jump
+ Plug 'vim-scripts/lastpos.vim'
