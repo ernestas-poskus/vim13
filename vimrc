@@ -27,6 +27,9 @@ set mouse=a
 "tell the term has 256 colors
 set t_Co=256
 
+" neovim + tmux
+set clipboard=unnamed
+
 " ================ General Config ====================
 
 set number                      "Line numbers are good
