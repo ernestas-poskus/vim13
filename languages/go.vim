@@ -42,7 +42,7 @@ let g:go_fmt_options = ''
 " with the default K , keywordprg shortcut. This shortcut is by default set to
 " use the program man. However in go using godoc is more idiomatic. Default is
 " enabled. >
-let g:go_doc_keywordprg_enabled = 1
+let g:go_doc_keywordprg_enabled = 0
 
 " Use this option to change default path for vim-go tools when using
 " |GoInstallBinaries| and |GoUpdateBinaries|. If not set `$GOBIN` or
