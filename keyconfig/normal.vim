@@ -3,7 +3,6 @@
 nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search highlights
 nnoremap <c-d> dd " Delete line
 nnoremap <leader>w :StripTrailingWhitespaces<CR>
-nnoremap <leader><space> viwh " Select word
 
 " Create window splits easier. The default
 nnoremap <silent> vv <C-w>v
@@ -94,3 +93,7 @@ nnoremap <silent> <leader>x :bn<CR>
 nnoremap gf :e<cfile><CR>
 nnoremap <C-w>f :sp +e<cfile><CR>
 nnoremap <C-w>gf :tabe<cfile><CR>
+
+" Select word
+nnoremap <space> viw
+nnoremap <leader><space> viwh
