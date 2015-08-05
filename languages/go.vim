@@ -26,6 +26,14 @@ autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint afte
  inoremap ' "
  inoremap " '
 
+" <leader>" Surround a word with "quotes"
+nnoremap <leader>" ciw'<C-R>"'
+vnoremap <leader>" c'<C-R>"'<ESC>
+
+" <leader>' Surround a word with 'single quotes'
+nnoremap <leader>' ciw"<C-R>""
+vnoremap <leader>' c"<C-R>""<ESC>
+
 " vim-go settings
 
 " Use this option to auto |:GoFmt| on save. By default it's enabled >
