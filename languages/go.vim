@@ -12,19 +12,19 @@ autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after 
 autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
 
 " Keyconfig
- nmap <Leader>i <Plug>(go-info)
- nmap <Leader>gd <Plug>(go-doc)
- nmap <Leader>gv <Plug>(go-doc-vertical)
- nmap <Leader>gb <Plug>(go-doc-browser)
- nmap <leader>r <Plug>(go-run)
- nmap <leader>b <Plug>(go-build)
- nmap <leader>t <Plug>(go-test)
- nmap gd <Plug>(go-def)
- nmap <Leader>ds <Plug>(go-def-split)
- nmap <Leader>dv <Plug>(go-def-vertical)
- nmap <Leader>dt <Plug>(go-def-tab)
- inoremap ' "
- inoremap " '
+nmap <Leader>i <Plug>(go-info)
+nmap <Leader>gd <Plug>(go-doc)
+nmap <Leader>gv <Plug>(go-doc-vertical)
+nmap <Leader>gb <Plug>(go-doc-browser)
+nmap <leader>r <Plug>(go-run)
+nmap <leader>b <Plug>(go-build)
+nmap <leader>t <Plug>(go-test)
+nmap gg <Plug>(go-def)
+nmap <Leader>ds <Plug>(go-def-split)
+nmap <Leader>dv <Plug>(go-def-vertical)
+nmap <Leader>dt <Plug>(go-def-tab)
+inoremap ' "
+inoremap " '
 
 " <leader>" Surround a word with "quotes"
 nnoremap <leader>" ciw'<C-R>"'
