@@ -2,7 +2,9 @@
 
 ![Vim + Tmux setup](/doc/looks.png)
 
-#### Linux Vim + Lua Installation
+### Linux Vim Installation
+
+#### Normal distribution
 
 ```
 sudo apt-get install liblua5.1-dev vim-nox
@@ -30,10 +32,31 @@ sudo checkinstall
 make isntall
 ```
 
-##### Neovim + Tmux support Installation
+#### Neovim distribution
+
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+```
+
+### Mac Vim Installation
+
+#### Normal distribution
+
+```
+brew uninstall macvim
+brew remove macvim
+brew cleanup
+brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
+```
+
+#### Neovim distribution
 
 ```
 brew tap neovim/neovim
 brew install --HEAD neovim
-brew install reattach-to-user-namespace
 ```
+
+#### Tmux support
+brew install reattach-to-user-namespace
