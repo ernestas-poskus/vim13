@@ -1,5 +1,18 @@
 #!/bin/sh
-mkdir -p ~/.nvim > /dev/null 2>&1
-mkdir -p ~/.nvim/backups > /dev/null 2>&1
-ln -sf ~/vim13/languages/ ~/.nvim/indent
+mkdir -p ~/.vim/undodir > /dev/null 2>&1
+mkdir -p ~/.vim/colors > /dev/null 2>&1
+
+# Vim plugin manager
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Color scheme
+curl -fLo ~/.vim/colors/molokai.vim --create-dirs \
+    https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
+ln -sf ~/vim13/languages ~/.vim/indent
+ln -sf ~/vim13/vimrc ~/.vimrc
+
+# Support NEOVIM
 ln -sf ~/vim13/vimrc ~/.nvimrc
+ln -sf ~/.vim ~/.nvim
