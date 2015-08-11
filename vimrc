@@ -59,7 +59,7 @@ set nowb
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 if has('persistent_undo')
-  set undodir=~/.vim/backups
+  set undodir=~/.vim/undodir
   set undofile
 endif
 
