@@ -11,6 +11,8 @@ set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after save
 autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
 
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+
 " Keyconfig
 nmap <Leader>i <Plug>(go-info)
 nmap <Leader>gd <Plug>(go-doc)
