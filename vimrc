@@ -12,6 +12,7 @@ set notimeout
 set ttimeout
 set timeoutlen=100
 set updatetime=1000
+set lazyredraw " Vim loves to redraw the screen during things it probably doesn't need to—like in the middle of macros.
 
 " Colors folder
 colorscheme molokai
