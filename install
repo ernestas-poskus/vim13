@@ -1,18 +1,26 @@
 #!/bin/sh
-mkdir -p ~/.vim/undodir > /dev/null 2>&1
-mkdir -p ~/.vim/colors > /dev/null 2>&1
+
+if [ ! -d "$HOME/vim13" ]; then
+  echo "Installing vim13"
+  git clone https://github.com/ernestas-poskus/vim13.git $HOME/dot13
+fi
+
+mkdir -p $HOME/.vim/autoload > /dev/null 2>&1
+mkdir -p $HOME/.vim/colors > /dev/null 2>&1
+mkdir -p $HOME/.vim/undodir > /dev/null 2>&1
+mkdir -p $HOME/.vim/colors > /dev/null 2>&1
 
 # Vim plugin manager
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Color scheme
-curl -fLo ~/.vim/colors/molokai.vim --create-dirs \
+curl -fLo $HOME/.vim/colors/molokai.vim --create-dirs \
     https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
-ln -sf ~/vim13/languages ~/.vim/indent
-ln -sf ~/vim13/vimrc ~/.vimrc
+ln -sf $HOME/vim13/languages $HOME/.vim/indent
+ln -sf $HOME/vim13/vimrc $HOME/.vimrc
 
 # Support NEOVIM
-ln -sf ~/vim13/vimrc ~/.nvimrc
-ln -sf ~/.vim ~/.nvim
+ln -sf $HOME/vim13/vimrc $HOME/.nvimrc
+ln -sf $HOME/.vim $HOME/.nvim
