@@ -38,3 +38,6 @@ Plug 'tpope/vim-abolish'
 
 " Last position jump
 Plug 'vim-scripts/lastpos.vim'
+
+" Deoplete is the abbreviation of "dark powered neo-completion"
+Plug 'Shougo/deoplete.nvim'
