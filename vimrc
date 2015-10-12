@@ -32,7 +32,7 @@ set mouse=a
 set t_Co=256
 
 " neovim + tmux
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " ================ General Config ====================
 
