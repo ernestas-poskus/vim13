@@ -2,7 +2,7 @@
 set grepprg=ag\ --nogroup\ --nocolor
 
 " Ag settings
-let g:agprg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
+let g:ag_prg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
 
 "
 " Functions
