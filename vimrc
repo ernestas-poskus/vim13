@@ -11,13 +11,11 @@ set nocompatible
 set notimeout
 set ttimeout
 set timeoutlen=100
-set updatetime=1000
 set lazyredraw " Vim loves to redraw the screen during things it probably doesn't need to—like in the middle of macros.
 
 " Colors folder
 colorscheme molokai
 let g:rehash256 = 1
-let g:molokai_original = 1
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -27,9 +25,6 @@ set smartcase       " ...unless we type a capital
 
 "some stuff to get the mouse going in term
 set mouse=a
-
-"tell the term has 256 colors
-set t_Co=256
 
 " neovim + tmux
 set clipboard+=unnamedplus
@@ -41,7 +36,6 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
-set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 
@@ -94,21 +88,6 @@ set linebreak    "Wrap lines at convenient points
 set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
-
-" ================ Completion =======================
-
-set wildmode=list:longest
-set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
-set wildignore+=*vim/backups*
-set wildignore+=*sass-cache*
-set wildignore+=*DS_Store*
-set wildignore+=vendor/rails/**
-set wildignore+=vendor/cache/**
-set wildignore+=*.gem
-set wildignore+=log/**
-set wildignore+=tmp/**
-set wildignore+=*.png,*.jpg,*.gif
 
 " ================ Scrolling ========================
 
