@@ -1,17 +1,9 @@
 setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 
-function! s:GoVet()
-  cexpr system("go vet " . shellescape(expand('%')))
-  copen
-endfunction
-command! GoVet :call s:GoVet()
-
 " Hooks
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after save
-autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
+autocmd BufWritePost,FileWritePost *.go execute 'GoMetaLinter' | cwindow " GoLint after save
 
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_go_checkers = []
 
 " Keyconfig
 nmap <Leader>i <Plug>(go-info)
@@ -41,8 +33,10 @@ vnoremap <leader>' c"<C-R>""<ESC>
 " Use this option to auto |:GoFmt| on save. By default it's enabled >
 let g:go_fmt_autosave = 1
 
+" By default vim-go shows errors for the fmt command, to disable it:
+let g:go_fmt_fail_silently = 1
+
 " Use this option to define which tool is used to gofmt. By default `gofmt` is used >
-let g:go_fmt_command = "gofmt"
 let g:go_fmt_command = "goimports"
 
 " Use this option to add additional options to the |g:go_fmt_command|. Default is empty. >
@@ -53,15 +47,6 @@ let g:go_fmt_options = ''
 " use the program man. However in go using godoc is more idiomatic. Default is
 " enabled. >
 let g:go_doc_keywordprg_enabled = 0
-
-" Use this option to change default path for vim-go tools when using
-" |GoInstallBinaries| and |GoUpdateBinaries|. If not set `$GOBIN` or
-" `$GOPATH/bin` is used. >
-let g:go_bin_path = expand($GOPATH)
-
-" Use this option to define the default snippet engine.  By default
-" "ultisnips" is used. Use "neosnippet" for neosnippet.vim: >
-let g:go_snippet_engine = "ultisnips"
 
 
 " Syntax Settings
@@ -91,6 +76,9 @@ let g:go_highlight_functions = 1
 
 " Highlights method names. By default it's disabled. >
 let g:go_highlight_methods = 1
+
+" Highlights operators. By default it's disabled. >
+let g:go_highlight_operators = 1
 
 " Highlights struct names. By default it's disabled. >
 let g:go_highlight_structs = 1
