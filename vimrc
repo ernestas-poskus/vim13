@@ -106,12 +106,12 @@ endfor
 
 " =============== Plug/Vundle/Bundle Initialization ===============
 call plug#begin('~/.vim/plugged')
-for fpath in split(globpath('~/vim13/plugs/', '*.plug'), '\n')
+for fpath in split(globpath('~/vim13/plugs/', '*.vim'), '\n')
   exe 'source' fpath
 endfor
 call plug#end()
 
-" Plugin Settings
+" Source Settings
 for fpath in split(globpath('~/vim13/settings/', '*.vim'), '\n')
   exe 'source' fpath
 endfor
