@@ -9,7 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 
 " CTRLP
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jasoncodes/ctrlp-modified.vim'
 
 " Motion repeat ("5j" (without quotes) and then ";" to repeat "5j")
