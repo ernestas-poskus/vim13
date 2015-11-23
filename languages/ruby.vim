@@ -1,8 +1,8 @@
 setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Rails
-nnoremap ,vv :Rview<cr>
-nnoremap ,cc :Rcontroller<cr>
+nnoremap <leader>vv :Rview<cr>
+nnoremap <leader>cc :Rcontroller<cr>
 
 " Rspec
 function! ChangePendingRspecToXit()
@@ -17,7 +17,7 @@ function! ChangePendingRspecToXit()
   endwhile
 endfunction
 
-nnoremap <silent> ,rxit :call ChangePendingRspecToXit()<cr>
+nnoremap <silent> <leader>rxit :call ChangePendingRspecToXit()<cr>
 
 " insert a before { } block around a line
 nnoremap <silent> \bf ^ibefore { <esc>$a }
@@ -30,17 +30,17 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
-map ,ja :CtrlP app/assets<CR>
-map ,jm :CtrlP app/models<CR>
-map ,jc :CtrlP app/controllers<CR>
-map ,jv :CtrlP app/views<CR>
-map ,jh :CtrlP app/helpers<CR>
-map ,jl :CtrlP lib<CR>
-map ,jp :CtrlP public<CR>
-map ,js :CtrlP spec<CR>
-map ,jf :CtrlP fast_spec<CR>
-map ,jd :CtrlP db<CR>
-map ,jC :CtrlP config<CR>
-map ,jV :CtrlP vendor<CR>
-map ,jF :CtrlP factories<CR>
-map ,jT :CtrlP test<CR>
+map <leader>ja :CtrlP app/assets<CR>
+map <leader>jm :CtrlP app/models<CR>
+map <leader>jc :CtrlP app/controllers<CR>
+map <leader>jv :CtrlP app/views<CR>
+map <leader>jh :CtrlP app/helpers<CR>
+map <leader>jl :CtrlP lib<CR>
+map <leader>jp :CtrlP public<CR>
+map <leader>js :CtrlP spec<CR>
+map <leader>jf :CtrlP fast_spec<CR>
+map <leader>jd :CtrlP db<CR>
+map <leader>jC :CtrlP config<CR>
+map <leader>jV :CtrlP vendor<CR>
+map <leader>jF :CtrlP factories<CR>
+map <leader>jT :CtrlP test<CR>
