@@ -12,6 +12,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jasoncodes/ctrlp-modified.vim'
 
+" Fuzzy matching
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 " Motion repeat ("5j" (without quotes) and then ";" to repeat "5j")
 Plug 'vim-scripts/repmo.vim'
 
