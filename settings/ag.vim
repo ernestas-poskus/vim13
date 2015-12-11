@@ -1,8 +1,8 @@
-" Use ag over grep
-set grepprg=ag\ --nogroup\ --nocolor
-
 " Ag settings
-let g:ag_prg='ag --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
+let g:ag_prg='ag --nogroup --nocolor --column --ignore tags --ignore-dir log --ignore-dir tmp --ignore-dir solr'
+
+" Use ag over grep
+set grepprg=g:ag_prg
 
 "
 " Functions
