@@ -54,25 +54,6 @@ let g:ctrlp_prompt_mappings = {
     \ 'CreateNewFile()':      []
     \ }
 
-" We don't want to use Ctrl-p as the mapping because
-" it interferes with YankRing (paste, then hit ctrl-p)
-"let g:ctrlp_map = ',t'
-"nnoremap <silent> ,t :CtrlP<CR>
-nnoremap <Leader>o :CtrlP<CR>
-
-" Additional mapping for ctags search
-nnoremap <Leader>b :CtrlPTag<CR>
-
-" Search for modified
-nnoremap <Leader>m :CtrlPModified<CR>
-
-" Cmd-Shift-P to clear the cache
-nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
-
-"Cmd-Shift-(M)ethod - jump to a method (tag in current file)
-"Ctrl-m is not good - it overrides behavior of Enter
-nnoremap <silent> <D-M> :CtrlPBufTag<CR>
-
 let g:ctrlp_abbrev = {
     \ 'gmode': 't',
     \ 'abbrevs': [
