@@ -1,8 +1,10 @@
 #!/bin/sh
 
-if [ ! -d "$HOME/vim13" ]; then
+vim13="$HOME/vim13"
+
+if [ ! -d $vim13 ]; then
   echo "Installing vim13"
-  git clone https://github.com/ernestas-poskus/vim13.git $HOME/dot13
+  git clone https://github.com/ernestas-poskus/vim13.git $vim13
 fi
 
 mkdir -p $HOME/.vim/autoload > /dev/null 2>&1
@@ -22,9 +24,14 @@ curl -fLo $HOME/.vim/colors/molokai.vim --create-dirs \
 curl -fLo $HOME/.vim/colors/zenburn.vim --create-dirs \
     https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
 
-ln -sf $HOME/vim13/languages $HOME/.vim/indent
-ln -sf $HOME/vim13/vimrc $HOME/.vimrc
+ln -sf $vim13/languages $HOME/.vim/indent
+ln -sf $vim13/vimrc $HOME/.vimrc
 
 # Support NEOVIM
-ln -sf $HOME/vim13/vimrc $HOME/.nvimrc
+ln -sf $vim13/vimrc $HOME/.nvimrc
 ln -sf $HOME/.vim $HOME/.nvim
+
+# Link NEOVIM config
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+ln -s ~/.vim $XDG_CONFIG_HOME/nvim
+ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
