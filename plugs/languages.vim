@@ -29,6 +29,7 @@ Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
 " Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'phildawes/racer', { 'for': 'rust' }
+Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 
 " TOML
 Plug 'cespare/vim-toml', { 'for': 'toml' }
