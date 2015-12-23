@@ -1,5 +1,9 @@
-scriptencoding utf-8
+" Encoding
 set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set bomb
+set binary
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -15,19 +19,29 @@ set lazyredraw " Vim loves to redraw the screen during things it probably doesn'
 
 " Colors folder
 colorscheme zenburn
-let g:rehash256 = 1
+if &term =~ '256color'
+  set t_ut=
+endif
 
-set incsearch   "find the next match as we type the search
-set hlsearch    "hilight searches by default
+" Searching
+set hlsearch " hilight searches by default
+set incsearch " find the next match as we type the search
+set ignorecase " Ignore case when searching...
+set smartcase " ...unless we type a capital
 set viminfo='100,f1 " Save up to 100 marks, enable capital marks
-set ignorecase      " Ignore case when searching...
-set smartcase       " ...unless we type a capital
 
-"some stuff to get the mouse going in term
+" Some stuff to get the mouse going in term
 set mouse=a
+set mousemodel=popup
 
-" neovim + tmux
-set clipboard+=unnamedplus
+" Disable the blinking cursor.
+set gcr=a:blinkon0
+set scrolloff=3
+
+" Copy/Paste/Cut
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
 
 " ================ General Config ====================
 
@@ -49,9 +63,19 @@ syntax on
 
 " ================ Turn Off Swap Files ==============
 
+"" Directories for swp files
 set noswapfile
 set nobackup
 set nowb
+
+set fileformats=unix,dos,mac
+set shell=/usr/bin/zsh
+
+" Session management
+let g:session_directory = "~/.nvim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
