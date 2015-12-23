@@ -1,10 +1,3 @@
-" Auto invoking
-autocmd BufReadPost * call SetCursorPosition()
-
-
-
-
-
 " Functions
 
 " via: http://rails-bestpractices.com/posts/60-remove-trailing-whitespace
@@ -40,6 +33,9 @@ function! CloseWindowOrKillBuffer()
     bdelete
   endif
 endfunction
+
+" Auto invoking
+autocmd BufReadPost * call SetCursorPosition()
 
 "jump to last cursor position when opening a file
 "dont do it when writing a commit log entry
