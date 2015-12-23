@@ -14,9 +14,13 @@ mkdir -p $HOME/.vim/colors > /dev/null 2>&1
 curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Color scheme
+# Molokai Color scheme
 curl -fLo $HOME/.vim/colors/molokai.vim --create-dirs \
     https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
+# Zenburn Color scheme
+curl -fLo $HOME/.vim/colors/zenburn.vim --create-dirs \
+    https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
 
 ln -sf $HOME/vim13/languages $HOME/.vim/indent
 ln -sf $HOME/vim13/vimrc $HOME/.vimrc
