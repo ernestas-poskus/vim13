@@ -14,7 +14,7 @@ set timeoutlen=100
 set lazyredraw " Vim loves to redraw the screen during things it probably doesn't need to—like in the middle of macros.
 
 " Colors folder
-colorscheme molokai
+colorscheme zenburn
 let g:rehash256 = 1
 
 set incsearch   "find the next match as we type the search
