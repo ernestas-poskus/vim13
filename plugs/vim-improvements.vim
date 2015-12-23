@@ -45,3 +45,9 @@ Plug 'vim-scripts/lastpos.vim'
 
 " Deoplete is the abbreviation of "dark powered neo-completion"
 Plug 'Shougo/deoplete.nvim'
+
+" Silver searcher wrapper
+Plug 'rking/ag.vim'
+
+" Easymotion plugin <leader><leader> w/b/e
+Plug 'Lokaltog/vim-easymotion'
