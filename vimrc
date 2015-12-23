@@ -71,12 +71,6 @@ set nowb
 set fileformats=unix,dos,mac
 set shell=/usr/bin/zsh
 
-" Session management
-let g:session_directory = "~/.nvim/session"
-let g:session_autoload = "no"
-let g:session_autosave = "no"
-let g:session_command_aliases = 1
-
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
