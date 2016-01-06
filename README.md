@@ -16,3 +16,9 @@ sudo apt-get install neovim
 brew tap neovim/neovim
 brew install --HEAD neovim
 ```
+
+### Install
+
+```bash
+curl -L https://raw.githubusercontent.com/ernestas-poskus/vim13/master/install | bash
+```
