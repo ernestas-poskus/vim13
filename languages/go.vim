@@ -1,8 +1,5 @@
 setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 
-" Hooks
-autocmd BufWritePost,FileWritePost *.go execute 'GoMetaLinter' | cwindow " GoLint after save
-
 let g:syntastic_go_checkers = []
 
 " Keyconfig
