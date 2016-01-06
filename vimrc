@@ -39,9 +39,7 @@ set gcr=a:blinkon0
 set scrolloff=3
 
 " Copy/Paste/Cut
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
+set clipboard+=unnamedplus
 
 " ================ General Config ====================
 
