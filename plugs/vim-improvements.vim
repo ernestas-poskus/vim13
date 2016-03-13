@@ -51,3 +51,6 @@ Plug 'rking/ag.vim'
 
 " Easymotion plugin <leader><leader> w/b/e
 Plug 'Lokaltog/vim-easymotion'
+
+" WakaTime
+Plug 'wakatime/vim-wakatime'
