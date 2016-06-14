@@ -1,6 +1,7 @@
 setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 
-let g:syntastic_go_checkers = []
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " Keyconfig
 nmap <Leader>i <Plug>(go-info)
