@@ -83,3 +83,22 @@ let g:go_highlight_structs = 1
 
 " Highlights build constraints. By default it's disabled
 let g:go_highlight_build_constraints = 1
+
+" Highlights interface names. By default it's disabled. >
+let g:go_highlight_interfaces = 1
+
+" Use this option to define the default snippet engine.  By default "ultisnips"
+" is used. Use "neosnippet" for neosnippet.vim: >
+let g:go_snippet_engine = "ultisnips"
+
+" This option is neovim only. Use it to change the behavior of the test
+" commands. If set to 1 it opens the test commands inside a new terminal
+" according to |g:go_term_mode|, otherwise it will run them in the background
+" just like `:GoBuild` and then display the status with |go#jobcontrol#Statusline()|.
+" By default it is disabled.
+let g:go_term_enabled = 1
+
+" This option is neovim only. Use it to change the default terminal mode of
+" go commands that run in a new terminal. The default is vsplit.
+" Current options are vsplit, split or tab.
+let g:go_term_mode = "vsplit"
