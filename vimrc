@@ -67,7 +67,7 @@ set nobackup
 set nowb
 
 set fileformats=unix,dos,mac
-set shell=/usr/bin/zsh
+set shell=/bin/bash
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
