@@ -39,7 +39,7 @@ set gcr=a:blinkon0
 set scrolloff=3
 
 " Copy/Paste/Cut
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 " ================ General Config ====================
 
