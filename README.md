@@ -2,19 +2,10 @@
 
 ![NEOVIM](/doc/looks.png)
 
-### Linux neovim installation
+### Linux VIM installation
 
-```
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get update
-sudo apt-get install neovim
-```
-
-### Mac neovim installation
-
-```
-brew tap neovim/neovim
-brew install --HEAD neovim
+```bash
+sudo apt-get install vim-gnome
 ```
 
 ### Install
