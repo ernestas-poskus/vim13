@@ -1,10 +1,6 @@
 " We don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
-if executable('FZF')
-  nnoremap <Leader>o :CtrlP<CR>
-else
-  nnoremap <Leader>o :FZF<CR>
-endif
+nnoremap <Leader>o :CtrlP<CR>
 
 " Search for modified
 nnoremap <Leader>m :CtrlPModified<CR>
