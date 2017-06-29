@@ -59,6 +59,9 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
+" Spelling
+set spell spelllang=en_us
+
 " ================ Turn Off Swap Files ==============
 
 "" Directories for swp files
