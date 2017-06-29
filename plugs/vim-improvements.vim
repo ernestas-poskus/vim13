@@ -51,3 +51,6 @@ Plug 'Lokaltog/vim-easymotion'
 
 " WakaTime
 Plug 'wakatime/vim-wakatime'
+
+" Fzy fuzzy finder
+Plug 'cloudhead/neovim-fuzzy'
