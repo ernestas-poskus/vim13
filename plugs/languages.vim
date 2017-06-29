@@ -41,3 +41,6 @@ Plug 'chase/vim-ansible-yaml', { 'for': 'yaml' }
 
 " Jinja2
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
+
+" C
+Plug 'vivien/vim-linux-coding-style', { 'for': 'c' }
