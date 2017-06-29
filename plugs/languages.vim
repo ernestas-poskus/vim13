@@ -19,12 +19,8 @@ Plug 'golang/lint', { 'for': 'go' }
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/nvim/symlink.sh', 'for': 'go' }
 
 " Ruby
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'tpope/vim-rake', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'tpope/vim-Bundler', { 'for': 'ruby' }
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
-Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
 
 " Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
