@@ -26,6 +26,7 @@ Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'phildawes/racer', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
 
 " TOML
 Plug 'cespare/vim-toml', { 'for': 'toml' }
