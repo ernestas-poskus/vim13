@@ -2,11 +2,9 @@
 
 ![NEOVIM](/doc/looks.png)
 
-### Linux VIM installation
+### NEOVIM installation
 
-```bash
-sudo apt-get install vim-gnome
-```
+https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 ### Install
 
