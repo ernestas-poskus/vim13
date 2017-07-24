@@ -1,7 +1,6 @@
 " ================ Normal Mode map ==============
 
 nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search highlights
-nnoremap <c-d> dd " Delete line
 nnoremap <leader>w :StripTrailingWhitespaces<CR>
 
 " Create window splits easier. The default
