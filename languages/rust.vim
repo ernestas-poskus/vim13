@@ -1,9 +1,6 @@
 inoremap ' "
 inoremap " '
 
-" Hooks
-autocmd BufWritePost,FileWritePost *.rs execute 'RustFmt'
-
 let g:racer_cmd = "racer"
 
 " Set this option to 1 to run |:RustFmt| automatically when saving a
