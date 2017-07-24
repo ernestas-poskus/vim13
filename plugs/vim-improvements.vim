@@ -57,3 +57,7 @@ Plug 'cloudhead/neovim-fuzzy'
 
 " Whitespace cleaner
 Plug 'bronson/vim-trailing-whitespace'
+
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
