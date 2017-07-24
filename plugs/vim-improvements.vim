@@ -54,3 +54,6 @@ Plug 'wakatime/vim-wakatime'
 
 " Fzy fuzzy finder
 Plug 'cloudhead/neovim-fuzzy'
+
+" Whitespace cleaner
+Plug 'bronson/vim-trailing-whitespace'
