@@ -1,20 +1,5 @@
 " Functions
 
-" via: http://rails-bestpractices.com/posts/60-remove-trailing-whitespace
-" Strip trailing whitespace
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
-
 " Use Q to intelligently close a window
 " (if there are multiple windows into the same buffer)
 " or kill the buffer entirely if it's the last window looking into that buffer
