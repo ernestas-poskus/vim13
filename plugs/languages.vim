@@ -9,6 +9,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 
 " JavaScript
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 
 " CoffeeScript
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }

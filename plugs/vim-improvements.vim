@@ -38,7 +38,6 @@ Plug 'vim-scripts/lastpos.vim'
 
 " Deoplete is the abbreviation of "dark powered neo-completion"
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 " Silver searcher wrapper
 Plug 'rking/ag.vim'
