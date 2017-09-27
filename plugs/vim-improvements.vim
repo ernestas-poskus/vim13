@@ -33,9 +33,6 @@ Plug 'sjl/gundo.vim'
 " Maintains a history of previous yanks, changes and deletes
 Plug 'vim-scripts/YankRing.vim'
 
-" Easily search for, substitute, and abbreviate multiple variants of a word
-Plug 'tpope/vim-abolish'
-
 " Last position jump
 Plug 'vim-scripts/lastpos.vim'
 
