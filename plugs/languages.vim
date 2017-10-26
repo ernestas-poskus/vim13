@@ -46,3 +46,6 @@ Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
 
 " C
 Plug 'vivien/vim-linux-coding-style', { 'for': 'c' }
+
+" Vue
+Plug 'posva/vim-vue', { 'for': 'vue' }
