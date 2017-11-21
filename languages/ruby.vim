@@ -23,9 +23,8 @@ nnoremap <silent> <leader>rxit :call ChangePendingRspecToXit()<cr>
 nnoremap <silent> \bf ^ibefore { <esc>$a }
 
 " RSpec.vim mappings
-let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "!bundle exec rspec {spec}"
-map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>t :call RunAllSpecs()<CR>
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
