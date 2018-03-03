@@ -2,10 +2,6 @@
 
 nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search highlights
 
-" Create window splits easier. The default
-nnoremap <silent> vv <C-w>v
-nnoremap <silent> ss <C-w>s
-
 " Resize windows with arrow keys
 nnoremap <D-Up> <C-w>+
 nnoremap <D-Down> <C-w>-
