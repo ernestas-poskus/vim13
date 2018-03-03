@@ -20,11 +20,6 @@ nmap <leader><S-ESC> ,,b
 
 nnoremap <silent> <C-F> :vertical botright wincmd F<CR>
 
-" copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
-" this is helpful to paste someone the path you're looking at
-nnoremap <silent> <leader>cf :let @* = expand("%:~")<CR>
-nnoremap <silent> <leader>cn :let @* = expand("%:t")<CR>
-
 "(v)im (c)ommand - execute current line as a vim command
 nmap <silent> <leader>vc yy:<C-f>p<C-c><CR>
 
