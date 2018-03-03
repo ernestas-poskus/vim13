@@ -66,11 +66,6 @@ nmap <silent> <leader>qo :copen<CR>
 nnoremap <silent> <leader>z :bp<CR>
 nnoremap <silent> <leader>x :bn<CR>
 
-" Make gf (go to file) create the file, if not existent
-nnoremap gf :e<cfile><CR>
-nnoremap <C-w>f :sp +e<cfile><CR>
-nnoremap <C-w>gf :tabe<cfile><CR>
-
 " Select word
 nnoremap <space> viw
 nnoremap <leader><space> viwh
