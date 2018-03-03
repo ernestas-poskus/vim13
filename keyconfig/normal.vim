@@ -68,4 +68,3 @@ nnoremap <silent> <leader>x :bn<CR>
 
 " Select word
 nnoremap <space> viw
-nnoremap <leader><space> viwh
