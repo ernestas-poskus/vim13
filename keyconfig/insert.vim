@@ -1,7 +1,3 @@
-" ================ Insert Mode map ==============
-inoremap <c-d> <esc>ddi
-inoremap <c-u> <esc>VUi
-
 "When typing a string, your quotes auto complete. Move past the quote
 "while still in insert mode by hitting Ctrl-a. Example:
 "
