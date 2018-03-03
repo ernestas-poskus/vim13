@@ -4,3 +4,7 @@
 " down recognition. The home keys and the immediate keys
 " accessible by middle fingers are available
 let g:EasyMotion_keys='asdfjkoweriop'
+
+" Easy motion
+nmap <leader><ESC> ,,w
+nmap <leader><S-ESC> ,,b
