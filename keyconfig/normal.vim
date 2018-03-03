@@ -14,10 +14,6 @@ nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
 nmap <leader><ESC> ,,w
 nmap <leader><S-ESC> ,,b
 
-" Git-Gutter config: highlights git changes, jump between hunks
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk]
-
 " Automatically jump to a file at the correct line number
 " i.e. if your cursor is over /some/path.rb:50 then using 'gf' on it will take
 " you to that line
