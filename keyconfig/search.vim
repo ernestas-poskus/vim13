@@ -5,8 +5,5 @@ nnoremap <Leader>o :FuzzyOpen<CR>
 " Search for modified
 nnoremap <Leader>m :CtrlPModified<CR>
 
-" Search for lines
-nnoremap <Leader>l :Lines<CR>
-
 " Search in current buffer
 nnoremap <Leader>s :FuzzyGrep<CR>
