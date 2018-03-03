@@ -2,12 +2,6 @@
 
 nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search highlights
 
-" Resize windows with arrow keys
-nnoremap <D-Up> <C-w>+
-nnoremap <D-Down> <C-w>-
-nnoremap <D-Left> <C-w><
-nnoremap <D-Right>  <C-w>>
-
 " Source vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
