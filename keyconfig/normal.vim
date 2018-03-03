@@ -18,8 +18,6 @@ nmap <leader><S-ESC> ,,b
 " i.e. if your cursor is over /some/path.rb:50 then using 'gf' on it will take
 " you to that line
 
-" use ,gf to go to file in a vertical split
-nnoremap <silent> ,gf   :vertical botright wincmd F<CR>
 nnoremap <silent> <C-F> :vertical botright wincmd F<CR>
 
 " copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
