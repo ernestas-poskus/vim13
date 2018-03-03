@@ -64,3 +64,6 @@ let g:ctrlp_abbrev = {
         \ },
         \ ]
     \ }
+
+" Search for modified
+nnoremap <Leader>m :CtrlPModified<CR>
