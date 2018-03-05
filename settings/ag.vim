@@ -23,8 +23,7 @@ endfunction
 vnoremap K :<C-U>execute "Ag " . GetVisual()<CR>
 
 "Grep for usages of the current file
-nnoremap ,gcf :exec "Ag " . expand("%:t:r")<CR>
-
+nnoremap <leader>gcf :exec "Ag " . expand("%:t:r")<CR>
 
 "
 " Keybindings
@@ -36,10 +35,10 @@ nnoremap <silent> K :Ag <cword><CR>
 nnoremap \ :Ag<SPACE>
 
 " Open the Ag command and place the cursor into the quotes
-nmap ,ag :Ag ""<Left>
+nmap <leader>ag :Ag ""<Left>
 
 " Ag in File
-nmap ,af :AgFile ""<Left>
+nmap <leader>af :AgFile ""<Left>
 
 " Ag 'word' in current path
-nnoremap <Leader>* :Ag '<cword>'<CR>
+nnoremap <leader>* :Ag '<cword>'<CR>
