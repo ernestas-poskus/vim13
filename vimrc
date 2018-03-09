@@ -91,6 +91,7 @@ autocmd BufNewFile,BufRead *.cql set filetype=cql
 autocmd BufNewFile,BufRead *.tpl set filetype=html
 autocmd BufNewFile,BufRead *.md set filetype=md
 autocmd BufNewFile,BufRead Dockerfile set filetype=dockerfile
+autocmd BufNewFile,BufRead *.expect set filetype=json
 
 " Display tabs and trailing spaces visually
 set list
