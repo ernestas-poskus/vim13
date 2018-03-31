@@ -50,3 +50,6 @@ Plug 'vivien/vim-linux-coding-style', { 'for': 'c' }
 
 " Vue
 Plug 'posva/vim-vue', { 'for': 'vue' }
+
+" Terraform
+Plug 'hashivim/vim-terraform'
