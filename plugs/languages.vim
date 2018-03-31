@@ -52,4 +52,4 @@ Plug 'vivien/vim-linux-coding-style', { 'for': 'c' }
 Plug 'posva/vim-vue', { 'for': 'vue' }
 
 " Terraform
-Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform', 'tfvars'] }
