@@ -53,3 +53,6 @@ Plug 'posva/vim-vue', { 'for': 'vue' }
 
 " Terraform
 Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform', 'tfvars'] }
+
+" CQL
+Plug 'elubow/cql-vim', { 'for': 'cql' }
