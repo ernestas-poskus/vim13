@@ -57,3 +57,7 @@ Plug 'bronson/vim-trailing-whitespace'
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+
+" Sessions
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
