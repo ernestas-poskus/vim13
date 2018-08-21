@@ -33,12 +33,3 @@ nnoremap <silent> K :Ag <cword><CR>
 
 " \ - Ag shortcut
 nnoremap \ :Ag<SPACE>
-
-" Open the Ag command and place the cursor into the quotes
-nmap <leader>ag :Ag ""<Left>
-
-" Ag in File
-nmap <leader>af :AgFile ""<Left>
-
-" Ag 'word' in current path
-nnoremap <leader>* :Ag '<cword>'<CR>
