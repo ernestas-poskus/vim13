@@ -25,7 +25,7 @@ curl -fLo $HOME/.vim/colors/molokai.vim --create-dirs \
 curl -fLo $HOME/.vim/colors/zenburn.vim --create-dirs \
     https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
 
-ln -sf $vim13/languages/ $HOME/.vim/after/ftpugin/*
+ln -sf $vim13/languages $HOME/.vim/after/ftplugin
 ln -sf $vim13/vimrc $HOME/.vimrc
 
 # Support NEOVIM
