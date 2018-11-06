@@ -29,10 +29,5 @@ nnoremap Y y$
 nnoremap 0 ^
 nnoremap ^ 0
 
-"Move back and forth through previous and next buffers
-"with <leader>z and <leader>x
-nnoremap <silent> <leader>z :bp<CR>
-nnoremap <silent> <leader>x :bn<CR>
-
 " Select word
 nnoremap <space> viw
