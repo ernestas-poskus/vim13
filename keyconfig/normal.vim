@@ -2,9 +2,6 @@
 
 nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search highlights
 
-" Source vimrc
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
 nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
 
 " Automatically jump to a file at the correct line number
