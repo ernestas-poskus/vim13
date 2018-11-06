@@ -8,9 +8,6 @@ nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
 " i.e. if your cursor is over /some/path.rb:50 then using 'gf' on it will take
 " you to that line
 
-"(v)im (r)eload
-nmap <silent> <leader>vr :so %<CR>
-
 " Type <leader>hl to toggle highlighting on/off, and show current value.
 noremap <leader>hl :set hlsearch! hlsearch?<CR>
 
