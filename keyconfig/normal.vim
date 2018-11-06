@@ -16,9 +16,6 @@ nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
 
 nnoremap <silent> <C-F> :vertical botright wincmd F<CR>
 
-"(v)im (c)ommand - execute current line as a vim command
-nmap <silent> <leader>vc yy:<C-f>p<C-c><CR>
-
 "(v)im (r)eload
 nmap <silent> <leader>vr :so %<CR>
 
