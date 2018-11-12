@@ -1,9 +1,6 @@
-let g:deoplete#enable_at_startup = 1
 "Deoplete gets started automatically when Neovim starts if
 "this value is 1.
-
-"With the default value 0, you cannot use deoplete
-"unless you start it manually.
+let g:deoplete#enable_at_startup = 1
 
 """*g:deoplete#complete_method*
 let g:deoplete#complete_method = "complete"
@@ -165,11 +162,6 @@ let g:deoplete#omni#functions = {}
 "  filetype.
 "In case there is no omnifunc setting for the current filetype
 "in the dictionary, deoplete will use the 'omnifunc' setting.
-let g:deoplete#omni#functions.ruby = 'rubycomplete#Complete'
-let g:deoplete#omni#functions.javascript = [
-      \ 'tern#Complete',
-      \ 'jspc#omni'
-\]
 "Note: It supports context filetype feature instead of
 "'omnifunc'.  You can call the omnifunc in the embedded
 "language.
