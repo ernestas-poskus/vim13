@@ -61,3 +61,6 @@ Plug 'honza/vim-snippets'
 " Sessions
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
+
+" Align text
+Plug 'junegunn/vim-easy-align'
