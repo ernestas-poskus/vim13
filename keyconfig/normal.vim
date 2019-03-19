@@ -31,3 +31,6 @@ nnoremap ^ 0
 
 " Select word
 nnoremap <space> viw
+
+" Map escape
+inoremap jj <Esc>
