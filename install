@@ -36,3 +36,15 @@ ln -sf $HOME/.vim $HOME/.nvim
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
 ln -s $HOME/.vim $XDG_CONFIG_HOME/nvim
 ln -s $HOME/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
+
+echo 'Installing ag:'
+if ! which ag  > /dev/null; then
+  sudo dnf install the_silver_searcher
+fi
+
+if ! which fzy  > /dev/null; then
+  echo 'Installing fzy fuzzy finder'
+  install_path='/tmp/fzy'
+  git clone https://github.com/jhawthorn/fzy.git $install_path
+  cd $install_path && sudo make install
+fi
