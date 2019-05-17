@@ -20,7 +20,6 @@ Plug 'golang/lint', { 'for': 'go' }
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/nvim/symlink.sh', 'for': 'go' }
 
 " Ruby
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 
 " Rust
