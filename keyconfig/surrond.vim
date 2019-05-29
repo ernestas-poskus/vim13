@@ -18,10 +18,10 @@ vnoremap <leader>( c( <C-R>" )<ESC>
 vnoremap <leader>) c(<C-R>")<ESC>
 
 " <leader>[ Surround a word with [brackets]
-nnoremap <leader>] ciw[<C-R>"]       " [text]
-nnoremap <leader>[ ciw[ <C-R>" ]     " [ text ]
-vnoremap <leader>[ c[<C-R>"]<ESC>
+nnoremap <leader>] ciw[<C-R>"]
+nnoremap <leader>[ ciw[<C-R>"]
 vnoremap <leader>] c[ <C-R>" ]<ESC>
+vnoremap <leader>[ c[<C-R>"]<ESC>
 
 " <leader>{ Surround a word with {braces}
 nnoremap <leader>} ciw{<C-R>"}
