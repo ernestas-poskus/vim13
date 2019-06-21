@@ -140,3 +140,7 @@ endfor
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+
+" Additional settings
+set modelines=0
+set nomodeline
