@@ -55,4 +55,5 @@ Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform', 'tfvars'] }
 " CQL
 Plug 'elubow/cql-vim', { 'for': 'cql' }
 
+" Typescript
 Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'typescript'] }
