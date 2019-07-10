@@ -52,7 +52,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'cloudhead/neovim-fuzzy'
 
 " Whitespace cleaner
-Plug 'bronson/vim-trailing-whitespace'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Snippets
 Plug 'SirVer/ultisnips'
