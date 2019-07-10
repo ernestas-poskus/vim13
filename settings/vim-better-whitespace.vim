@@ -8,4 +8,4 @@ let g:strip_whitespace_on_save=1
 let g:strip_whitespace_confirm=0
 
 " By default, all the lines in the file will have their trailing whitespace stripped when you save the file. This can be changed to only the modified lines
-let g:strip_only_modified_lines=1
+let g:strip_only_modified_lines=0
