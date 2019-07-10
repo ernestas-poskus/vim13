@@ -1,1 +1,1 @@
-com! FixJsonFormat %!jq '.'
+com! FormatJson %!jq '.'
