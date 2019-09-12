@@ -1,7 +1,7 @@
 inoremap ' "
 inoremap " '
 
-let g:racer_cmd = "racer"
+let g:racer_cmd = "racer --edition 2018"
 
 " Set this option to 1 to run |:RustFmt| automatically when saving a
 " buffer. If not specified it defaults to 0 : >
