@@ -60,3 +60,6 @@ Plug 'junegunn/vim-easy-align'
 
 " This plugin provides a start screen for Vim and Neovim.
 Plug 'mhinz/vim-startify'
+
+" Fuzzy search
+Plug 'junegunn/fzf.vim'
