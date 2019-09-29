@@ -44,9 +44,6 @@ Plug 'easymotion/vim-easymotion'
 " WakaTime
 Plug 'wakatime/vim-wakatime'
 
-" Fzy fuzzy finder
-Plug 'cloudhead/neovim-fuzzy'
-
 " Whitespace cleaner
 Plug 'ntpeters/vim-better-whitespace'
 
