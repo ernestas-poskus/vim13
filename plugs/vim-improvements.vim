@@ -64,3 +64,6 @@ Plug 'xolox/vim-session'
 
 " Align text
 Plug 'junegunn/vim-easy-align'
+
+" This plugin provides a start screen for Vim and Neovim.
+Plug 'mhinz/vim-startify'
