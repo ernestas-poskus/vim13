@@ -10,7 +10,7 @@ let g:session_autosave="yes"
 
 " By default this option is set to false (0). When you set this option to true (1) and you start Vim,
 " the session plug-in will open your last used session of the default session.
-let g:session_default_to_last = 1
+let g:session_default_to_last = 0
 
 " This option sets the interval in minutes for automatic, periodic saving of
 " active sessions. The default is zero which disables the feature.
