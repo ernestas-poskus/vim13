@@ -20,10 +20,6 @@ let g:session_autosave_periodic = 2
 " periodic saving of active sessions are silenced.
 let g:session_autosave_silent = 1
 
-" Persist the options of the session plug-in using the session plug-in...
-let g:session_persist_globals = ['&sessionoptions']
-call add(g:session_persist_globals, 'g:session_autosave_to')
-
 " The names of the commands defined by the session plug-in start with the action
 " they perform, followed by the string 'Session'. Some people prefer it the other
 " way around because they find it easier to remember and you can type
