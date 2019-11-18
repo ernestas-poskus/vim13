@@ -17,12 +17,10 @@ set ttimeout
 set timeoutlen=100
 set lazyredraw " Vim loves to redraw the screen during things it probably doesn't need to—like in the middle of macros.
 let g:session_directory = '~/.vim/sessions' " Vim sessions directory
+set termguicolors
 
 " Colors folder
 colorscheme zenburn
-if &term =~ '256color'
-  set t_ut=
-endif
 
 " Searching
 set hlsearch " hilight searches by default
