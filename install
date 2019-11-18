@@ -33,6 +33,10 @@ curl -fLo $HOME/.vim/colors/bluewery.vim --create-dirs \
 curl -fLo $HOME/.vim/colors/anderson.vim --create-dirs \
   https://raw.githubusercontent.com/tlhr/anderson.vim/master/colors/anderson.vim
 
+# Plastic Color scheme
+curl -fLo $HOME/.vim/colors/plastic.vim --create-dirs \
+  https://raw.githubusercontent.com/flrnd/plastic.vim/master/colors/plastic.vim
+
 ln -sf $vim13/languages $HOME/.vim/after/ftplugin
 ln -sf $vim13/vimrc $HOME/.vimrc
 
