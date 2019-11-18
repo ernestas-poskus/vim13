@@ -25,6 +25,14 @@ curl -fLo $HOME/.vim/colors/molokai.vim --create-dirs \
 curl -fLo $HOME/.vim/colors/zenburn.vim --create-dirs \
     https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
 
+# Bluewery Color scheme
+curl -fLo $HOME/.vim/colors/bluewery.vim --create-dirs \
+  https://raw.githubusercontent.com/relastle/bluewery.vim/master/autoload/lightline/colorscheme/bluewery.vim
+
+# Anderson Color scheme
+curl -fLo $HOME/.vim/colors/anderson.vim --create-dirs \
+  https://raw.githubusercontent.com/tlhr/anderson.vim/master/colors/anderson.vim
+
 ln -sf $vim13/languages $HOME/.vim/after/ftplugin
 ln -sf $vim13/vimrc $HOME/.vimrc
 
