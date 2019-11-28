@@ -20,7 +20,7 @@ let g:session_directory = '~/.vim/sessions' " Vim sessions directory
 set termguicolors
 
 " Colors folder
-colorscheme bluewery
+colorscheme zenburn
 
 " Searching
 set hlsearch " hilight searches by default
