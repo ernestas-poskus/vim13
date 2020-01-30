@@ -27,3 +27,10 @@ let g:rustfmt_command = 'rustfmt --edition 2018'
 " first. The compiled binary is always placed in a temporary
 " directory, but is run from the current directory.
 nmap <leader>r :RustRun<CR>
+
+" Compiles and runs the current file. If it has unsaved changes,
+" it will be saved first using |:update|. If the current file is
+" an unnamed buffer, it will be written to a temporary file
+" first. The compiled binary is always placed in a temporary
+" directory, but is run from the current directory.
+nmap <leader>t :RustTest<CR>
