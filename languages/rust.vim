@@ -19,7 +19,7 @@ let g:rust_bang_comment_leader = 1
 
 " Set this option to the name of the 'rustfmt' executable in your $PATH. If
 " not specified it defaults to 'rustfmt' : >
-let g:rustfmt_command = 'rustfmt --edition 2018'
+let g:rustfmt_command = 'rustfmt'
 
 " Compiles and runs the current file. If it has unsaved changes,
 " it will be saved first using |:update|. If the current file is
