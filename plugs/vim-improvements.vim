@@ -32,9 +32,6 @@ Plug 'vim-scripts/YankRing.vim'
 " Last position jump
 Plug 'vim-scripts/lastpos.vim'
 
-" Deoplete is the abbreviation of "dark powered neo-completion"
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
 " Silver searcher wrapper
 Plug 'rking/ag.vim'
 
@@ -60,3 +57,6 @@ Plug 'mhinz/vim-startify'
 
 " Fuzzy search
 Plug 'junegunn/fzf.vim'
+
+" Auto complete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
