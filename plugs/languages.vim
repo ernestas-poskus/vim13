@@ -56,3 +56,6 @@ Plug 'elubow/cql-vim', { 'for': 'cql' }
 
 " Typescript
 Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'typescript'] }
+
+" Plum
+Plug 'pgavlin/pulumi.vim'
