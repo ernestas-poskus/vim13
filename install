@@ -49,14 +49,45 @@ mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
 ln -s $HOME/.vim $XDG_CONFIG_HOME/nvim
 ln -s $HOME/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
 
-echo 'Installing ag:'
+# Link foreign settings
+ln -s $vim13/foreign_settings/coc-settings.json $HOME/.vim/coc_settings.json
+
+echo 'vim13: installing ag:'
 if ! which ag  > /dev/null; then
   sudo dnf install the_silver_searcher
 fi
 
 if ! which fzy  > /dev/null; then
-  echo 'Installing fzy fuzzy finder'
+  echo 'vim13: installing fzy fuzzy finder'
   install_path='/tmp/fzy'
   git clone https://github.com/jhawthorn/fzy.git $install_path
   cd $install_path && sudo make install
 fi
+
+if ! which python2  > /dev/null; then
+  pip2 install pynvim --user
+fi
+
+if ! which python  > /dev/null; then
+  pip install pynvim --user
+fi
+
+if ! which ruby  > /dev/null; then
+  gem install neovim
+  gem install solargraph
+fi
+
+if ! which npm  > /dev/null; then
+  npm install -g neovim
+  npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+fi
+
+echo "vim13: Installing plug's"
+nvim -es -u $vim13/vimrc -c "PlugInstall"
+echo "vim13: coc"
+nvim -u $vim13/vimrc -c "CocInstall coc-tsserver coc-solargraph coc-rls" \
+  -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go coc-git" \
+  -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
+  -c "CocInstall coc-vimlsp coc-xml coc-yaml coc-yank" \
+  -c "CocInstall coc-sources coc-syntax coc-utilsnips" \
+  -c "checkhealth"
