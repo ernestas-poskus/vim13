@@ -60,3 +60,6 @@ Plug 'junegunn/fzf.vim'
 
 " Auto complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" HardMore
+Plug 'wikitopian/hardmode'
