@@ -88,6 +88,6 @@ echo "vim13: coc"
 nvim -u $vim13/vimrc -c "CocInstall coc-tsserver coc-solargraph coc-rls" \
   -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go coc-git" \
   -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
-  -c "CocInstall coc-vimlsp coc-xml coc-yaml coc-yank" \
+  -c "CocInstall coc-vimlsp coc-xml coc-yaml coc-yank coc-rust-analyzer" \
   -c "CocInstall coc-sources coc-syntax coc-utilsnips" \
   -c "checkhealth"
