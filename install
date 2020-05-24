@@ -66,10 +66,12 @@ fi
 
 if ! which python2  > /dev/null; then
   pip2 install pynvim --user
+  pip2 install noevim --user
 fi
 
 if ! which python  > /dev/null; then
   pip install pynvim --user
+  pip install noevim --user
 fi
 
 if ! which ruby  > /dev/null; then
@@ -85,9 +87,9 @@ fi
 echo "vim13: Installing plug's"
 nvim -es -u $vim13/vimrc -c "PlugInstall"
 echo "vim13: coc"
-nvim -u $vim13/vimrc -c "CocInstall coc-tsserver coc-solargraph coc-rls" \
-  -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go coc-git" \
-  -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
+nvim -u ~/.vimrc -c "CocInstall coc-tsserver coc-solargraph coc-git" \
   -c "CocInstall coc-vimlsp coc-xml coc-yaml coc-yank coc-rust-analyzer" \
-  -c "CocInstall coc-sources coc-syntax coc-utilsnips" \
+  -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
+  -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go" \
+  -c "CocInstall coc-sources coc-syntax coc-utilsnips coc-rls" \
   -c "checkhealth"
