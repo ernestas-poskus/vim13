@@ -1,3 +1,3 @@
-com! FormatJson %!jq '.'
+com! FormatJson %!jq '-S' '.'
 
 com! QQ :quitall
