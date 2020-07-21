@@ -32,9 +32,6 @@ Plug 'vim-scripts/YankRing.vim'
 " Last position jump
 Plug 'vim-scripts/lastpos.vim'
 
-" Silver searcher wrapper
-Plug 'rking/ag.vim'
-
 " Easymotion plugin <leader><leader> w/b/e
 Plug 'easymotion/vim-easymotion'
 
@@ -63,3 +60,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " HardMore
 Plug 'wikitopian/hardmode'
+
+" RipGrep
+Plug 'jremmen/vim-ripgrep'

@@ -1,8 +1,8 @@
-" Ag settings
-let g:ag_prg='ag --nogroup --nocolor --column --path-to-ignore .agignore --ignore tags'
+" grep program settings
+let g:rg_command='rg --vimgrep -S'
 
-" Use ag over grep
-set grepprg=g:ag_prg
+" Use rg over grep
+set grepprg=g:rg_command
 
 "
 " Functions
@@ -20,16 +20,16 @@ function! GetVisual()
 endfunction
 
 "grep visual selection
-vnoremap K :<C-U>execute "Ag " . GetVisual()<CR>
+vnoremap K :<C-U>execute "Rg " . GetVisual()<CR>
 
 "Grep for usages of the current file
-nnoremap <leader>gcf :exec "Ag " . expand("%:t:r")<CR>
+nnoremap <leader>gcf :exec "Rg " . expand("%:t:r")<CR>
 
 "
 " Keybindings
 "
 "grep the current word using K (mnemonic Kurrent)
-nnoremap <silent> K :Ag <cword><CR>
+nnoremap <silent> K :Rg <cword><CR>
 
-" \ - Ag shortcut
-nnoremap \ :Ag<SPACE>
+" \ - Rg shortcut
+nnoremap \ :Rg<SPACE>
