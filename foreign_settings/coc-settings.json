@@ -1,0 +1,15 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+
+  "solargraph.autoformat": true,
+  "solargraph.diagnostics": true,
+  "solargraph.rename": true
+}
