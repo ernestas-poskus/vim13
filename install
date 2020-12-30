@@ -50,7 +50,7 @@ ln -s $HOME/.vim $XDG_CONFIG_HOME/nvim
 ln -s $HOME/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
 
 # Link foreign settings
-ln -s $vim13/foreign_settings/coc-settings.json $HOME/.vim/coc_settings.json
+ln -s $vim13/foreign_settings/coc-settings.json $HOME/.vim/coc-settings.json
 
 echo 'vim13: installing ag:'
 if ! which ag  > /dev/null; then
@@ -92,4 +92,5 @@ nvim -u ~/.vimrc -c "CocInstall coc-tsserver coc-solargraph coc-git" \
   -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
   -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go" \
   -c "CocInstall coc-sources coc-syntax coc-utilsnips coc-rls" \
+  -c "CocInstall coczcheckhealth coc-prettier" \
   -c "checkhealth"
