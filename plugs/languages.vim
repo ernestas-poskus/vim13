@@ -57,5 +57,12 @@ Plug 'elubow/cql-vim', { 'for': 'cql' }
 " Typescript
 Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'typescript'] }
 
-" Plum
+" Pulumi
 Plug 'pgavlin/pulumi.vim'
+
+" Tsx
+Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx'] }
+Plug 'peitalin/vim-jsx-typescript', { 'for': ['tsx', 'jsx', 'typescriptreact'] }
+
+" Styled
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
