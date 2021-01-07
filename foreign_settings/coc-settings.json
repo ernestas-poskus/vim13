@@ -4,7 +4,8 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "vue"
+    "vue",
+    "less"
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
