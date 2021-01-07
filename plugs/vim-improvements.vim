@@ -53,6 +53,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'mhinz/vim-startify'
 
 " Fuzzy search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Auto complete
