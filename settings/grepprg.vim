@@ -18,18 +18,3 @@ function! GetVisual()
   let &clipboard = cb_save
   return selection
 endfunction
-
-"grep visual selection
-vnoremap K :<C-U>execute "Rg " . GetVisual()<CR>
-
-"Grep for usages of the current file
-nnoremap <leader>gcf :exec "Rg " . expand("%:t:r")<CR>
-
-"
-" Keybindings
-"
-"grep the current word using K (mnemonic Kurrent)
-nnoremap <silent> K :Rg <cword><CR>
-
-" \ - Rg shortcut
-nnoremap \ :Rg<SPACE>

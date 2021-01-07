@@ -1,19 +1,3 @@
-" We don't want to use Ctrl-p as the mapping because
-" it interferes with YankRing (paste, then hit ctrl-p)
-nnoremap <Leader>o :Files<CR>
-
-" Git files (git status)
-nnoremap <Leader>m :GFiles?<CR>
-
-" Search in loaded buffers
-nnoremap <Leader>l :Lines<CR>
-
-" Search in current buffer
-nnoremap <Leader>b :BLines<CR>
-
-" Git files (git status)
-nnoremap <Leader>ll :Lines<CR>
-
 " This is the default extra key bindings
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',

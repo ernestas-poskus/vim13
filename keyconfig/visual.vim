@@ -8,3 +8,9 @@
 " whatever is in your paste buffer.
 "
 vnoremap p "_dP
+
+"grep visual selection
+vnoremap K :<C-U>execute "RG " . GetVisual()<CR>
+
+"Grep for usages of the current file
+nnoremap <leader>gcf :xec "RG " . expand("%:t:r")<CR>
