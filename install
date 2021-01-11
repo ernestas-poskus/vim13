@@ -10,7 +10,6 @@ fi
 mkdir -p $HOME/.vim/autoload > /dev/null 2>&1
 mkdir -p $HOME/.vim/colors > /dev/null 2>&1
 mkdir -p $HOME/.vim/undodir > /dev/null 2>&1
-mkdir -p $HOME/.vim/colors > /dev/null 2>&1
 mkdir -p $HOME/.vim/after
 
 # Vim plugin manager
@@ -39,6 +38,7 @@ curl -fLo $HOME/.vim/colors/plastic.vim --create-dirs \
 
 ln -sf $vim13/languages $HOME/.vim/after/ftplugin
 ln -sf $vim13/vimrc $HOME/.vimrc
+ln -sf $vim13/ultisnips $HOME/.vim/UltiSnips
 
 # Support NEOVIM
 ln -sf $vim13/vimrc $HOME/.nvimrc
