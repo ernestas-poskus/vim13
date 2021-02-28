@@ -64,3 +64,6 @@ Plug 'wikitopian/hardmode'
 
 " RipGrep
 Plug 'jremmen/vim-ripgrep'
+
+" Tests
+Plug 'vim-test/vim-test'
