@@ -56,3 +56,7 @@ nnoremap <silent> K :RG <cword><CR>
 
 " \ - Rg shortcut
 nnoremap \ :RG<SPACE>
+
+" Microsoft Natural Ergonomic 4000
+nnoremap <Left> <C-w>h
+nnoremap <Right> <C-w>l
