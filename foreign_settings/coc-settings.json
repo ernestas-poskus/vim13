@@ -12,5 +12,8 @@
 
   "solargraph.autoformat": true,
   "solargraph.diagnostics": true,
-  "solargraph.rename": true
+  "solargraph.rename": true,
+
+  "rust-analyzer.enable": true
+
 }

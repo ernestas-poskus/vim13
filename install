@@ -91,6 +91,6 @@ nvim -u ~/.vimrc -c "CocInstall coc-tsserver coc-solargraph coc-git" \
   -c "CocInstall coc-vimlsp coc-xml coc-yaml coc-yank coc-rust-analyzer" \
   -c "CocInstall coc-html coc-lists coc-markdownlint coc-svg coc-vetur" \
   -c "CocInstall coc-json cos-css coc-eslint coc-explorer coc-go" \
-  -c "CocInstall coc-sources coc-syntax coc-utilsnips coc-rls" \
+  -c "CocInstall coc-sources coc-syntax coc-utilsnips" \
   -c "CocInstall coczcheckhealth coc-prettier" \
   -c "checkhealth"
