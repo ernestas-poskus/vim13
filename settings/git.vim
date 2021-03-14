@@ -1,7 +1,7 @@
 " Git
 noremap <Leader>Ga :Gwrite<CR>
-noremap <Leader>Gc :Gcommit<CR>
-noremap <Leader>Gp :Gpush<CR>
-noremap <Leader>Gs :Gstatus<CR>
-noremap <Leader>Gb :Gblame<CR>
-noremap <Leader>Gd :Gvdiff<CR>
+noremap <Leader>Gc :Git commit<CR>
+noremap <Leader>Gp :Git push<CR>
+noremap <Leader>Gs :Git status<CR>
+noremap <Leader>Gb :Git blame<CR>
+noremap <Leader>Gd :Git vdiff<CR>
