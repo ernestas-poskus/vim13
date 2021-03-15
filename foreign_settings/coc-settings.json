@@ -15,6 +15,9 @@
   "solargraph.rename": true,
 
   "rust-analyzer.enable": true,
-  "rust-analyzer.inlayHints.typeHints": false
+  "rust-analyzer.inlayHints.typeHints": false,
+
+  // https://github.com/neoclide/coc-tsserver
+  "eslint.packageManager": "yarn"
 
 }
